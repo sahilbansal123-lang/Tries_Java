@@ -15,8 +15,11 @@ public class CreatingTries {
 
     public static Node root = new Node(); // root always remain empty
 
+    public static void insert(String str) {
+
+    }
 
     public static void main(String[] args) {
-
+        String word[] = {"the", "a", "there", "their", "any", "thee"};
     }
 }
