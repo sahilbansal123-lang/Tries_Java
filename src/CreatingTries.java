@@ -46,6 +46,6 @@ public class CreatingTries {
             insert(words[i]);
         }
 
-        System.out.println(search("there"));
+        System.out.println(search("ther"));
     }
 }
