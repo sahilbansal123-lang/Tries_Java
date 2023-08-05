@@ -26,7 +26,7 @@ public class CreatingTries {
         curr.endOfWord = true;
     }
 
-    public static boolean search(String key) {
+    public static boolean search(String key) {   // Time Complexity = O(L)
         Node curr = root;
         for (int level = 0; level < key.length(); level++) {
             int idx = key.charAt(level) - 'a';
