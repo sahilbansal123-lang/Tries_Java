@@ -45,7 +45,11 @@ public class WordBreakProblem {
     }
 
     public static boolean wordBreak(String key) {
-        for (int i = 1; i < key.length(); i++) {
+        if (key.length() == 0) {
+            return true;
+        }
+
+        for (int i = 1; i <= key.length(); i++) {
             if (search(key.substring(0, i)) && wordBreak(key.substring(i))) {
                 return true;
             }
@@ -54,6 +58,14 @@ public class WordBreakProblem {
     }
 
     public static void main(String[] args) {
+        String[] words = {"i", "like", "sam", "samsung", "mobile", "ice"};
 
+        for (int i = 0; i < words.length; i++) {
+            insert(words[i]);
+        }
+
+        String key = "ilikesams";
+
+        System.out.println(wordBreak(key));
     }
 }
