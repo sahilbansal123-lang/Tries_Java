@@ -30,6 +30,17 @@ public class PrefixProblem {
         curr.endOfWord = true;
     }
 
+    public static void prefix(Node root, String ans) {
+        if (root == null) {
+            return;
+        }
+        if (root.freq == 1) {
+            System.out.println(ans);
+            return;
+        }
+
+
+    }
 
     public static void main(String[] args) {
 
