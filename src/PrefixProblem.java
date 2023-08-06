@@ -30,7 +30,7 @@ public class PrefixProblem {
         curr.endOfWord = true;
     }
 
-    public static void prefix(Node root, String ans) {
+    public static void findPrefix(Node root, String ans) {
         if (root == null) {
             return;
         }
@@ -39,7 +39,11 @@ public class PrefixProblem {
             return;
         }
 
-
+        for (int i = 0; i < root.children.length; i++) {
+            if (root.children[i] != null) {
+                findPrefix(root.children[i], ans+(char)(i - 'a'));
+            }
+        }
     }
 
     public static void main(String[] args) {
