@@ -13,6 +13,7 @@ public class PrefixProblem {
         }
     }
 
+
     public static Node root = new Node();
 
     public static void main(String[] args) {
