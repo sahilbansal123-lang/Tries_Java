@@ -39,7 +39,7 @@ public class StartsWithProblem {
             curr = curr.children[idx];
         }
 
-        return curr.endOfWord == true;
+        return curr.endOfWord;
     }
 
     public static boolean startsWith(String prefix) {
@@ -56,6 +56,16 @@ public class StartsWithProblem {
     }
 
     public static void main(String[] args) {
+        String[] words = {"mango", "man", "woman", "apple", "app"};
+        String prefix1 = "man";
+        String prefix2 = "app";
+        String prefix3 = "moon";
+        for (int i = 0; i < words.length; i++) {
+            insert(words[i]);
+        }
+        System.out.println(startsWith(prefix1));
+        System.out.println(startsWith(prefix2));
+        System.out.println(startsWith(prefix3));
 
     }
 }
