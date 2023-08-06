@@ -47,6 +47,12 @@ public class PrefixProblem {
     }
 
     public static void main(String[] args) {
+        String[] words = {"dog", "duck", "zebra", "dove"};
+        for (int i = 0; i < words.length; i++) {
+            insert(words[i]);
+        }
 
+        root.freq = -1;
+        findPrefix(root, "");
     }
 }
