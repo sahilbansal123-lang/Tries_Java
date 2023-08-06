@@ -45,6 +45,7 @@ public class UniqueSubstrings {
     public static void main(String[] args) {
         String str = "ababa";
 
+        // Suffix -> Suffix Trie -> CountNode = Ans
         for (int i = 0; i < str.length(); i++) {
             String suffix = str.substring(i);
             insert(suffix);
