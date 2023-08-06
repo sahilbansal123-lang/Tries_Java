@@ -41,7 +41,7 @@ public class PrefixProblem {
 
         for (int i = 0; i < root.children.length; i++) {
             if (root.children[i] != null) {
-                findPrefix(root.children[i], ans+(char)(i - 'a'));
+                findPrefix(root.children[i], ans+(char)(i + 'a'));
             }
         }
     }
