@@ -28,10 +28,28 @@ public class UniqueSubstrings {
     }
 
     public static int countNodes(Node root) {
+        int count = 0;
+        if (root == null) {
+            return 0;
+        }
 
+        for (int i = 0; i < 26; i++) {
+            if (root.children[i] != null) {
+                count += countNodes(root.children[i]);
+            }
+        }
+
+        return count+1;
     }
 
     public static void main(String[] args) {
+        String str = "ababa";
 
+        for (int i = 0; i < str.length(); i++) {
+            String suffix = str.substring(i);
+            insert(suffix);
+        }
+
+        System.out.println(countNodes(root));
     }
 }
