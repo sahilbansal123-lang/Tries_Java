@@ -1,4 +1,4 @@
-public class longestWord {
+public class LongestWord {
 
     public static class Node {
         Node[] children = new Node[26];
@@ -36,7 +36,7 @@ public class longestWord {
             curr = curr.children[idx];
         }
 
-        return curr.endOfWord == true;
+        return curr.endOfWord;
     }
 
     public static String ans = "";
