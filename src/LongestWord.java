@@ -58,7 +58,7 @@ public class LongestWord {
     }
 
     public static void main(String[] args) {
-        String words[] = {"a", "banana", "app","appl", "ap", "apple", "apply"};
+        String[] words = {"a", "banana", "app","appl", "ap", "apple", "apply"};
         for (int i = 0; i < words.length; i++) {
             insert(words[i]);
         }
